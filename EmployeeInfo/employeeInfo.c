@@ -1,22 +1,26 @@
 /* Filter specified employee */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define N 3
 
 struct Employee {
-    char name[10];
-    char sex[6];
+    char *name; //char name[10]
+    char *sex;  //char sex[10]
     int workYear;
     int wage;
-};
+}info[N];
 
 void input(struct Employee *worker);
 void output(struct Employee *worker);
 
 int main(void)
 {
-    struct Employee info[N]; 
+    for (int i = 0; i < N; i++) {
+        info[i].name = (char*)malloc(sizeof(char) * 10); 
+        info[i].sex = (char*)malloc(sizeof(char) * 10);
+    }
     input(info);
     output(info);
 
