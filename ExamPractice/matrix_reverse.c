@@ -1,3 +1,5 @@
+/* 矩阵转置 */
+
 #include <stdio.h>
 
 int main(void)
