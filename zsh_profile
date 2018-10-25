@@ -1,0 +1,7 @@
+. /Users/shanewang/anaconda3/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
+alias act='cd ~/anaconda3/bin && ipython3'
+alias python='python3'
+alias l='ls -l'
+alias ls='ls -G'
+export CLICOLOR=1
+export LSCOLORS=gxfxaxdxcxegedabagacad
