@@ -1,3 +1,4 @@
+export LC_ALL=en_US.UTF-8
 export PATH=~/anaconda3/bin:$PATH
 PATH="$PATH:$HOME/anaconda3/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # If you come from bash you might have to change your $PATH.
