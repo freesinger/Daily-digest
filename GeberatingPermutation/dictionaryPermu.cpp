@@ -1,4 +1,3 @@
-
 /* Dictionary Permutation */
 
 #include<iostream>
@@ -18,13 +17,13 @@ void dicPermu(int *raw, int N)
         for (int j = N - 1; j > 0; j--)
             if (raw[j - 1] < raw[j]) {
                 temp = j;
-                id = j;
+                // id = j;
                 min_maxnum = raw[temp];
                 break;
             }
 
-        for (int i = temp + 1; i < N; i++)
-            if (raw[i] < min_maxnum && raw[i] > raw[temp - 1]) {
+        for (int i = temp; i < N; i++)
+            if (raw[i] <= min_maxnum && raw[i] > raw[temp - 1]) {
                 min_maxnum = raw[i];
                 id = i;
             }
