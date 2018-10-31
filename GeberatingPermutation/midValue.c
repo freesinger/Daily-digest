@@ -19,7 +19,7 @@ int main(void)
     }
     */
 
-    // Des
+    // Dec
     cnt = 8;
     while (cnt > 2) {
         printf("%d ", init % cnt);
