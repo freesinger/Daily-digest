@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// 有中介数求序号
+// 由中介数求序号
 int serialNum(int *arr, int N)
 {
     int temp = arr[0];
