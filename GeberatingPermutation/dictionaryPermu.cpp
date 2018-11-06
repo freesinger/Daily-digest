@@ -56,9 +56,13 @@ int main(void)
     cin >> num;
 
     int arr[num];
+    
+    for (int i = 0; i < num; i++)
+        arr[i] = i + 1;
 
     for (int i = 0; i < num; i++)
-        cin >> arr[i];
+        cout << arr[i] << ' ';
+    cout << endl;
 
     dicPermu(arr, num);
 
