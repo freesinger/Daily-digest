@@ -9,9 +9,9 @@ using namespace std;
 // 由中介数求序号
 int serialNum(int *arr, int N)
 {
-    int temp = arr[0];
+    int temp = arr[1];
 
-    for (int i = 0; i < N - 1; i++)
+    for (int i = 1; i < N - 1; i++)
         temp = temp * (N - i) + arr[i + 1];
 
     return temp;
@@ -20,20 +20,20 @@ int serialNum(int *arr, int N)
 // 由序号求中介数
 void decSerailNum(int *arr, int N, int pre)
 {
-    int cnt = 2;
+    int cnt = 2, extra;
 
-    while (cnt < N) {
-        arr[N - 1] = pre % cnt;
-        pre /= cnt;
+    while (N--) {
+        extra = pre % cnt;
+        arr[N - 1] = extra;
+        pre = (pre - extra) / cnt;
         cnt++;
     }
-    arr[0] = pre;
 }
 
 // 输出下一排列
 void nextPerm(int *arr, int *res, int N)
 {
-    for (int i = 0; i < N - 1; i++) {
+    for (int i = 0; i < N; i++) {
         int pos = N - 1 - arr[i];
         while (pos >= 0) {
             if (!res[pos]) {
@@ -59,14 +59,14 @@ int main(void)
     int raw[num];
     int midV[num - 1], next_midV[num - 1];
 
-    for (int i = 1; i < num; i++)
-        cin >> raw[i];
+    for (int i = 0; i < num; i++)
+        raw[i] = i;
 
     // 求中介数
     for (int j = 0; j < num; j++) {
         int cnt = 0;
         for (int k = j + 1; k < num; k++) {
-            if (raw[k] < raw[k])
+            if (raw[k] < raw[j])
                 cnt++;
         }
         midV[j] = cnt;
@@ -78,13 +78,13 @@ int main(void)
         total *= num;
     
     while (--total) {
-        snum = serialNum(midV, num - 1);
+        snum = serialNum(midV, num);
         snum++;
-        decSerailNum(next_midV, num - 1, snum);
+        decSerailNum(next_midV, num, snum);
 
         int res[num];
         for (int i = 0; i < num; i++)
-            res[num] = 0;
+            res[i] = 0;
 
         nextPerm(next_midV, res, num);
     }

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/gcc/6.2.0/include/c++/6.2.0",
+                "/usr/local/Cellar/gcc/6.2.0/include/c++/6.2.0/x86_64-apple-darwin16.0.0",
+                "/usr/local/Cellar/gcc/6.2.0/include/c++/6.2.0/x86_64-apple-darwin16.0.0/i386"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks"
+            ],
+            "cStandard": "c11",
+            "C_Cpp.default.compilerPath": "/Library/Developer/CommandLineTools/usr/bin/g++",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

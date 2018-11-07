@@ -2,7 +2,7 @@
 
 #include<iostream>
 #include<utility>
-#include<cmath>
+#include<time.h>
 
 using namespace std;
 
@@ -56,6 +56,8 @@ int main(void)
     cin >> num;
 
     int arr[num];
+    float starttime, endtime, duration;
+    starttime = clock();
     
     for (int i = 0; i < num; i++)
         arr[i] = i + 1;
@@ -65,6 +67,11 @@ int main(void)
     cout << endl;
 
     dicPermu(arr, num);
+
+    endtime = clock();
+    duration = (double)(endtime - starttime) / CLOCKS_PER_SEC;
+
+    cout << duration * 1000 << "ms" << endl;
 
     return 0;
 }
