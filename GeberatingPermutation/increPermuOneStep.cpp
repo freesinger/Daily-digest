@@ -18,7 +18,7 @@ int serialNum(int *arr, int N)
 }
 
 // 由序号求中介数
-void decSerailNum(int *arr, int N, int pre)
+void incSerailNum(int *arr, int N, int pre)
 {
     int cnt = 2, extra;
 
@@ -49,7 +49,7 @@ void nextPerm(int *arr, int *res, int N)
                 pos--;
             }
         }
-        // pos初值N+1错误 ++pos修复位置值
+        // pos初值N+1数组越界 ++pos修复位置值
         res[++pos] = num--;
         // cout << res[pos] << ' ' << pos << endl;
     }
@@ -112,7 +112,7 @@ int main(void)
     snum++;
     cout << snum << endl;
 
-    decSerailNum(next_midV, num, snum);
+    incSerailNum(next_midV, num, snum);
 
     for (int i = 1; i < num; i++)
         cout << next_midV[i];

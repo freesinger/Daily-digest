@@ -1,4 +1,4 @@
-/* Incremental Permutation */
+/* Decremental Permutation */
 
 #include<iostream>
 #include<utility>
@@ -106,7 +106,7 @@ int main(void)
                 cnt++;
         }
         // 顺序存储 a1 a2 a3注意倒序输出
-        midV[num - raw[j] + 1] = cnt;
+        midV[raw[j] + 1] = cnt;
     }
 
     // 初始序号
