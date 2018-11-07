@@ -22,21 +22,22 @@ int serialNum(int *arr, int N)
     int temp = arr[1];
 
     for (int i = 1; i < N - 1; i++)
-        temp = temp * (N - i) + arr[i + 1];
+        // a2a3..初值为*3
+        temp = temp * (i + 2) + arr[i + 1];
 
     return temp;
 }
 
 // 由序号求中介数
-void incSerialNum(int *arr, int N, int pre)
+void decSerialNum(int *arr, int N, int pre)
 {
-    int cnt = 2, extra;
+    int cnt = N, extra;
 
     while (N) {
         extra = pre % cnt;
         arr[--N] = extra;
         pre = (pre - extra) / cnt;
-        cnt++;
+        cnt--;
         //cout << pre << ' ' << extra << N << endl;
     }
 }
@@ -47,7 +48,7 @@ void nextPerm(int *arr, int *res, int N)
     int temp, pos;
     int num = N;
 
-    for (int i = 1; i < N; i++) {
+    for (int i = N - 1; i > 0; i--) {
         pos = N;
         temp = arr[i] + 1;
         // cout << pos << ' ' << temp << endl;
@@ -124,7 +125,7 @@ int main(void)
     while (--total) {
         snum++;
 
-        incSerialNum(next_midV, num, snum);
+        decSerialNum(next_midV, num, snum);
 
         /* for (int i = 1; i < num; i++)
             cout << next_midV[i];
