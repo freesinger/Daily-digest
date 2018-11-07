@@ -125,7 +125,6 @@ int main(void)
     nextPerm(next_midV, res, num);
 
     /*int total = 1;
-
     while (num-- > 1)
         total *= num;
     
@@ -133,11 +132,9 @@ int main(void)
         snum = serialNum(midV, num);
         snum++;
         decSerailNum(next_midV, num, snum);
-
         int res[num];
         for (int i = 0; i < num; i++)
             res[num] = 0;
-
         nextPerm(next_midV, res, num);
     }*/
 
