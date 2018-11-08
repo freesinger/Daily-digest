@@ -116,7 +116,7 @@ int lookup(int *arr, int N)
     int pos;
 
     for (int i = 1; i < N; i++)
-        if (arr[i] == 9) {
+        if (arr[i] == N) {
             pos = i;
             break;
         }
