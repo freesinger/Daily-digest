@@ -1,7 +1,10 @@
-. /Users/shanewang/anaconda3/lib/python3.5/site-packages/powerline/bindings/zsh/powerline.zsh
-alias act='cd ~/anaconda3/bin && ipython3'
-alias python='python3'
-alias l='ls -l'
+. /Users/shanewang/anaconda3/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+alias jp='jupyter notebook'
+alias pip='pip3.6'
+alias ip='ipython'
 alias ls='ls -G'
 export CLICOLOR=1
 export LSCOLORS=gxfxaxdxcxegedabagacad
+alias zshconfig='vim ~/.zshrc'
+alias zshprofile='vim ~/.zsh_profile'
+alias python='/Library/Frameworks/Python.framework/Versions/3.6/bin/python3'
