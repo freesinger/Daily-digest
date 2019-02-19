@@ -85,5 +85,12 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# source /usr/local/bin/virtualenvwrapper.sh
 source ~/.zsh_profile
+# VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
+# source /usr/local/bin/virtualenvwrapper.sh
+# /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh
+VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
+source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh
