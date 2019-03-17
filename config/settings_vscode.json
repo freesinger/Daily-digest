@@ -3,7 +3,7 @@
     "explorer.confirmDragAndDrop": false,
     "guides.enabled": false,
     "material-icon-theme.showUpdateMessage": false,
-    "python.pythonPath": "/Library/Frameworks/Python.framework/Versions/3.6/bin/python3",
+    "python.pythonPath": "/Users/shanewang/anaconda3/bin/python",
     "terminal.external.osxExec": "iTerm2.app",
     "vsicons.dontShowNewVersionMessage": true,
     "window.zoomLevel": 1,
