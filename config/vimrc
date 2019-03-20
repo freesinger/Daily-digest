@@ -1,0 +1,7 @@
+set backspace=indent,eol,start
+set nocompatible
+call plug#begin("~/.vim_bundle")
+Plug 'Valloric/YouCompleteMe'
+call plug#end()
+filetype plugin indent on
+syntax enable
