@@ -38,7 +38,7 @@
     "editor.fontWeight": "bold",
     "editor.fontFamily": "Menlo, monospace",
     "workbench.fontAliasing": "auto",
-    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontSize": 12,
     "python.dataScience.sendSelectionToInteractiveWindow": true,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "none",
