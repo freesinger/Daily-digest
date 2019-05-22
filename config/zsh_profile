@@ -1,8 +1,14 @@
+# powerlines
 . /Users/shanewang/anaconda3/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
+# mysql root password hint: birthday with name
+alias mysql='mysql -u root -p'
+# logstash path
+alias lstash='cd /usr/local/Cellar/logstash/6.6.1/bin'
 alias jp='jupyter notebook'
 alias ip='ipython'
 alias ls='ls -G'
 export CLICOLOR=1
+export PATH=$PATH:/usr/local/mysql/bin/
 export LSCOLORS=gxfxaxdxcxegedabagacad
 alias zshconfig='vim ~/.zshrc'
 alias zshprofile='vim ~/.zsh_profile'
