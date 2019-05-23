@@ -89,12 +89,18 @@ source $ZSH/oh-my-zsh.sh
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # source /usr/local/bin/virtualenvwrapper.sh
-source ~/.zsh_profile
+#
 # VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python2
 # source /usr/local/bin/virtualenvwrapper.sh
 # /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh
+
+# >_ conda activate base
 VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.6/bin/python3
 source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.sh
+
+# cv2
+# >_ conda activate base
+# >_ workon cv3
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -102,12 +108,13 @@ source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.s
 # if [ $? -eq 0 ]; then
 #     eval "$__conda_setup"
 # else
-#    if [ -f "/Users/shanewang/anaconda3/etc/profile.d/conda.sh" ]; then
-#        . "/Users/shanewang/anaconda3/etc/profile.d/conda.sh"
-#    else
-#        export PATH="/Users/shanewang/anaconda3/bin:$PATH"
+#     if [ -f "/Users/shanewang/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/Users/shanewang/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/Users/shanewang/anaconda3/bin:$PATH"
 #     fi
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
+source ~/.zsh_profile
 
