@@ -1,7 +1,16 @@
+# MPI lib
+export PATH=$PATH:/Users/shanewang/mpi/bin/
+
+# Mysql
 export PATH=$PATH:/usr/local/mysql/bin/
+
+# Global Encoding
 export LC_ALL=en_US.UTF-8
+
+# Anaconda path
 export PATH=~/anaconda3/bin:$PATH
 PATH="$PATH:$HOME/anaconda3/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -116,5 +125,6 @@ source /Library/Frameworks/Python.framework/Versions/3.6/bin/virtualenvwrapper.s
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
+export GOPATH=$HOME/go
 source ~/.zsh_profile
 
